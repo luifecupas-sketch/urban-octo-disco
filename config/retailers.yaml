@@ -1,0 +1,49 @@
+# Retailers to check for the Breville Bambino Plus (model BES500BSS).
+#
+# `parser` selects the extraction strategy in src/deal_finder/scraper.py:
+#   - jsonld     : look for schema.org Product/Offer JSON-LD in the page
+#   - regex      : fall back to a regex price pattern near a marker string
+#
+# ships_to_freight_forwarder is informational only (see README) - it is not
+# used by the code, just a note for you when picking where to buy.
+product:
+  name: "Breville Bambino Plus Espresso Machine"
+  model: "BES500BSS"
+
+retailers:
+  - name: Amazon
+    url: https://www.amazon.com/dp/B07JVD78TT
+    parser: jsonld
+    notes: >
+      Amazon aggressively blocks non-browser traffic (especially from
+      datacenter/CI IPs like GitHub Actions), so this check will likely fail
+      most days. Set up camelcamelcamel's free price-watch email instead -
+      see README.
+
+  - name: Best Buy
+    url: https://www.bestbuy.com/site/breville-the-bambino-plus-espresso-machine-with-15-bars-of-pressure-and-milk-frother-stainless-steel/6302559.p
+    parser: jsonld
+
+  - name: Target
+    url: https://www.target.com/p/breville-bambino-plus-stainless-steel-espresso-maker-silver-bes500bss/-/A-89311859
+    parser: jsonld
+
+  - name: Williams Sonoma
+    url: https://www.williams-sonoma.com/products/breville-the-bambino-plus/
+    parser: jsonld
+
+  - name: Crate & Barrel
+    url: https://www.crateandbarrel.com/breville-bambino-plus-espresso-machine-brushed-stainless-steel/s323895
+    parser: jsonld
+
+  - name: Breville
+    url: https://www.breville.com/en-us/product/bes500bss
+    parser: jsonld
+
+  - name: Walmart
+    url: https://www.walmart.com/ip/Breville-Bambino-Plus-Espresso-Machine-BES500BSS/126891234
+    parser: jsonld
+    notes: >
+      Walmart's product IDs change/redirect often and it also has strong
+      bot detection - verify this URL still resolves and update it if the
+      script logs repeated failures for Walmart.

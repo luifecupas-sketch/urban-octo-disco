@@ -1,0 +1,23 @@
+{
+  "_comment": "Manually maintained coupon codes. Codes expire/rotate constantly and can't be reliably auto-discovered, so this list is curated by hand. Verify a code at checkout before relying on it - 'verified' below just means it was seen mentioned by a source, not that it is currently live. Update this file whenever you find/lose a working code.",
+  "codes": [
+    {
+      "code": "PRESOFFER",
+      "retailer": "any",
+      "type": "percent",
+      "value": 10,
+      "source": "web search, July 2026",
+      "verified": false,
+      "notes": "Reported to give 10% off Breville Bambino Plus. Unconfirmed - test at checkout."
+    },
+    {
+      "code": "BREVFUTURE10",
+      "retailer": "any",
+      "type": "percent",
+      "value": 10,
+      "source": "TechRadar coupons page, July 2026",
+      "verified": false,
+      "notes": "TechRadar-attributed exclusive code, stacking/expiry unknown."
+    }
+  ]
+}

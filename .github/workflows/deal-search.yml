@@ -1,0 +1,41 @@
+name: Breville Bambino Plus deal search
+
+on:
+  schedule:
+    # 13:00 UTC = 8:00 AM Panama time (UTC-5, no DST)
+    - cron: "0 13 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  check-deals:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run deal search
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+        run: PYTHONPATH=src python -m deal_finder.main
+
+      - name: Commit updated price history and report
+        run: |
+          git config user.name "deal-search-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/price_history.json reports/latest_deals.md
+          git diff --cached --quiet || git commit -m "Update deal search results [skip ci]"
+          git push
