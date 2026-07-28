@@ -1,1 +1,16 @@
-{"runs": []}
+{
+  "runs": [
+    {
+      "timestamp": "2026-07-28T18:02:59.958742+00:00",
+      "deals": [
+        {
+          "retailer": "Target",
+          "list_price": 35.0,
+          "effective_price": 31.5,
+          "applied_coupon": "PRESOFFER",
+          "in_stock": null
+        }
+      ]
+    }
+  ]
+}
