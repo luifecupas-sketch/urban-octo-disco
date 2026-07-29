@@ -3,8 +3,6 @@
 **Best deal found: $31.50 at Target**
 (after coupon `PRESOFFER`, list price was $35.00)
 
-:tada: This is a new all-time low in our tracked history (previous: n/a).
-
 | Retailer | List price | Effective price | Coupon | In stock |
 |---|---|---|---|---|
 | [Target](https://www.target.com/p/breville-bambino-plus-stainless-steel-espresso-maker-silver-bes500bss/-/A-89311859) | $35.00 | $31.50 | PRESOFFER | unknown |
