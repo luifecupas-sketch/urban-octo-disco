@@ -279,6 +279,25 @@
           "in_stock": null
         }
       ]
+    },
+    {
+      "timestamp": "2026-08-19T14:57:42.371498+00:00",
+      "deals": [
+        {
+          "retailer": "Amazon",
+          "list_price": 10.0,
+          "effective_price": 9.0,
+          "applied_coupon": "PRESOFFER",
+          "in_stock": null
+        },
+        {
+          "retailer": "Target",
+          "list_price": 35.0,
+          "effective_price": 31.5,
+          "applied_coupon": "PRESOFFER",
+          "in_stock": null
+        }
+      ]
     }
   ]
 }
