@@ -11,7 +11,7 @@
 
 - **Amazon**: could not find a price on the page (layout changed or blocked)
 - **Best Buy**: request failed: HTTPSConnectionPool(host='www.bestbuy.com', port=443): Read timed out. (read timeout=20)
-- **Williams Sonoma**: request failed: HTTPSConnectionPool(host='www.williams-sonoma.com', port=443): Read timed out. (read timeout=20)
+- **Williams Sonoma**: HTTP 403 (likely blocked or page moved)
 - **Crate & Barrel**: HTTP 403 (likely blocked or page moved)
 - **Breville**: HTTP 404 (likely blocked or page moved)
 - **Walmart**: could not find a price on the page (layout changed or blocked)
