@@ -961,6 +961,18 @@
           "in_stock": null
         }
       ]
+    },
+    {
+      "timestamp": "2026-10-11T17:53:54.813955+00:00",
+      "deals": [
+        {
+          "retailer": "Target",
+          "list_price": 35.0,
+          "effective_price": 31.5,
+          "applied_coupon": "PRESOFFER",
+          "in_stock": null
+        }
+      ]
     }
   ]
 }
