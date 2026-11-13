@@ -14,4 +14,4 @@
 - **Williams Sonoma**: HTTP 403 (likely blocked or page moved)
 - **Crate & Barrel**: HTTP 403 (likely blocked or page moved)
 - **Breville**: HTTP 404 (likely blocked or page moved)
-- **Walmart**: could not find a price on the page (layout changed or blocked)
+- **Walmart**: HTTP 404 (likely blocked or page moved)
